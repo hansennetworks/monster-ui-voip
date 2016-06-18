@@ -40,6 +40,17 @@
 				</div>
 			</div>
 			<div class="dashboard-left-section clearfix">
+				<div class="left-section-header link-box" data-category="licenses">
+					<span class="title">{{i18n.myOffice.totalLicenses}}</span>
+					<span class="number">{{totalUsers}}</span>
+				</div>
+				<div class="left-section-content users-section-content">
+					{{#times totalUsers}}
+					<div class="users-element"><i class="fa-2x fa fa-star{{#compare this '<' ../totalChannels}} monster-blue{{/compare}}"></i></div>
+					{{/times}}
+				</div>
+			</div>
+			<div class="dashboard-left-section clearfix">
 				<div class="left-section-header link-box" data-category="devices">
 					<span class="title">{{i18n.myOffice.totalDevices}}</span>
 					<span class="number">{{totalDevices}}</span>

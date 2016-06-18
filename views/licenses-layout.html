@@ -1,0 +1,36 @@
+<div id="licenses_container">
+    <div class="licenses-header">
+        <div class="title">
+            {{ i18n.licenses.title }}
+            <span class="count-users">{{countUsers}}</span>
+        </div>
+
+        <a class="monster-link add-user">
+            <i class="icon-telicon-add-user"></i>
+            {{ i18n.licenses.add }}
+        </a>
+
+        <span class="search-box pull-right">
+            <i class="fa fa-search"></i>
+            <input type="text" class="search-query" placeholder="{{ i18n.search }}..."></input>
+        </span>
+    </div>
+
+    <div class="licenses-grid">
+        <div class="grid-row title">
+            <div class="grid-cell name">{{ "1" }}</div>
+            <div class="grid-cell extension">{{ "2" }}</div>
+            <div class="grid-cell phone-number">{{ "3" }}</div>
+            <div class="grid-cell devices">{{ "4" }}</div>
+            <div class="grid-cell features">{{ "5" }}</div>
+        </div>
+        <div class="licenses-rows">
+            <div class="empty-search-row">
+                {{ "No Matching" }}
+            </div>
+            <div class="no-licenses-row">
+                {{ "No Licenses" }}
+            </div>
+        </div>
+    </div>
+</div>
